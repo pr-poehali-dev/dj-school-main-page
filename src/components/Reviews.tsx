@@ -21,18 +21,18 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">ОТЗЫВЫ УЧЕНИКОВ</h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-gray-600">
             Что говорят о нас наши студенты
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {reviews.map((review, index) => (
-            <Card key={index} className="bg-gray-800 border-gray-700">
+            <Card key={index} className="bg-white border-gray-200">
               <CardContent className="p-6">
                 <div className="flex mb-4">
                   {[...Array(review.rating)].map((_, i) => (
@@ -44,7 +44,7 @@ const Reviews = () => {
                     />
                   ))}
                 </div>
-                <p className="text-gray-300 mb-4">"{review.text}"</p>
+                <p className="text-gray-600 mb-4">"{review.text}"</p>
                 <p className="font-bold text-primary">- {review.name}</p>
               </CardContent>
             </Card>

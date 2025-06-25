@@ -25,11 +25,11 @@ const directions = [
 
 const Directions = () => {
   return (
-    <section id="directions" className="py-20 bg-gray-900">
+    <section id="directions" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">НАПРАВЛЕНИЯ ОБУЧЕНИЯ</h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-gray-600">
             Выбери свой стиль и освой его на профессиональном уровне
           </p>
         </div>
@@ -38,7 +38,7 @@ const Directions = () => {
           {directions.map((direction, index) => (
             <Card
               key={index}
-              className="bg-gray-800 border-gray-700 hover:border-primary transition-all group cursor-pointer"
+              className="bg-white border-gray-200 hover:border-primary transition-all group cursor-pointer"
             >
               <CardContent className="p-8 text-center">
                 <div
@@ -53,7 +53,7 @@ const Directions = () => {
                 <h3 className="text-2xl font-bold mb-4 text-primary">
                   {direction.name}
                 </h3>
-                <p className="text-gray-300">{direction.description}</p>
+                <p className="text-gray-600">{direction.description}</p>
               </CardContent>
             </Card>
           ))}

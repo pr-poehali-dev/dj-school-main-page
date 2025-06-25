@@ -27,11 +27,11 @@ const levels = [
 
 const Target = () => {
   return (
-    <section id="target" className="py-20 bg-black">
+    <section id="target" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">ДЛЯ КОГО НАШИ ПРОГРАММЫ</h2>
-          <p className="text-xl text-gray-300">
+          <p className="text-xl text-gray-600">
             От первых шагов до профессиональной сцены
           </p>
         </div>
@@ -40,7 +40,7 @@ const Target = () => {
           {levels.map((level, index) => (
             <Card
               key={index}
-              className="bg-gray-900 border-gray-700 hover:bg-gray-800 transition-all"
+              className="bg-white border-gray-200 hover:bg-gray-50 transition-all"
             >
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
@@ -49,7 +49,7 @@ const Target = () => {
                   </div>
                   <h3 className="text-2xl font-bold">{level.title}</h3>
                 </div>
-                <p className="text-gray-300 mb-6">{level.description}</p>
+                <p className="text-gray-600 mb-6">{level.description}</p>
                 <ul className="space-y-2">
                   {level.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-sm">

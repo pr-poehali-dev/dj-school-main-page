@@ -4,16 +4,16 @@ import Icon from "@/components/ui/icon";
 const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black" />
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100" />
 
       <div className="relative z-10 container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-center md:text-left">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-gray-900">
             СТАНЬ
             <span className="block text-primary">DJ</span>
             ПРОФИ
           </h1>
-          <p className="text-xl mb-8 text-gray-300">
+          <p className="text-xl mb-8 text-gray-600">
             Обучение диджеингу на топовом оборудовании. House, Techno, Hip-Hop –
             выбирай свое направление!
           </p>

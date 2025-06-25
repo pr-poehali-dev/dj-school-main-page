@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full bg-black/95 backdrop-blur-sm border-b border-gray-800 z-50">
+    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Icon name="Disc3" className="text-primary" size={32} />
@@ -11,19 +11,28 @@ const Header = () => {
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="hover:text-primary transition-colors">
+          <a
+            href="#about"
+            className="text-gray-700 hover:text-primary transition-colors"
+          >
             О школе
           </a>
-          <a href="#target" className="hover:text-primary transition-colors">
+          <a
+            href="#target"
+            className="text-gray-700 hover:text-primary transition-colors"
+          >
             Для кого
           </a>
           <a
             href="#directions"
-            className="hover:text-primary transition-colors"
+            className="text-gray-700 hover:text-primary transition-colors"
           >
             Направления
           </a>
-          <a href="#contact" className="hover:text-primary transition-colors">
+          <a
+            href="#contact"
+            className="text-gray-700 hover:text-primary transition-colors"
+          >
             Контакты
           </a>
         </nav>
